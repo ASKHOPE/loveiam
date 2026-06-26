@@ -117,14 +117,18 @@ const isActive = (route: string) => {
         <div class="max-w-container-max mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12 border-b border-primary-container/50 pb-12">
                 <!-- Brand Column (Spans 7 cols on desktop) -->
-                <div class="col-span-1 lg:col-span-7 flex flex-col items-start">
-                    <a class="font-display text-headline-md font-bold text-white mb-4 flex items-center gap-4 group transition-transform duration-300 hover:-translate-y-1" href="/">
+                <div class="col-span-1 lg:col-span-7 flex items-center gap-6">
+                    <a href="/" class="flex-shrink-0 group">
                         <img src="/logo.png" alt="Love In Action Logo" class="h-24 md:h-32 w-auto object-contain bg-white rounded-2xl p-2.5 shadow-md border border-white/10 transition-transform duration-500 group-hover:scale-105" />
-                        <span class="leading-tight">LOVE IN ACTION MINISTRIES, INC.</span>
                     </a>
-                    <p class="font-body text-body-md text-on-primary-container max-w-xl mb-8 leading-relaxed">
-                        Proclaiming the Gospel of Jesus Christ<br/>through the Tangible Acts of compassion.
-                    </p>
+                    <div class="flex flex-col justify-center">
+                        <a class="font-display text-headline-sm md:text-headline-md font-bold text-white mb-2 leading-tight hover:text-action-gold transition-colors" href="/">
+                            LOVE IN ACTION MINISTRIES, INC.
+                        </a>
+                        <p class="font-body text-body-md text-on-primary-container leading-relaxed max-w-lg">
+                            Proclaiming the Gospel of Jesus Christ<br/>through the Tangible Acts of compassion.
+                        </p>
+                    </div>
                 </div>
                 <!-- Quick Links & Support (Spans 5 cols on desktop) -->
                 <div class="col-span-1 lg:col-span-5 flex flex-col justify-center">
