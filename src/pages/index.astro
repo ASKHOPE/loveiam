@@ -7,12 +7,16 @@ import SixPillars from '../components/SixPillars.astro';
     <main class="flex-grow">
         <!-- Hero Section -->
         <section class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden bg-primary">
-            <!-- Background Image with Overlay -->
-            <div class="absolute inset-0 z-0">
-                <div class="w-full h-full bg-cover bg-center opacity-60 mix-blend-multiply transition-transform duration-10000 ease-out scale-105" style="background-image: url('/images/hero.jpg')"></div>
-                <div class="absolute inset-0 bg-primary/40"></div>
+            <!-- Slideshow Background Images with Overlay -->
+            <div class="absolute inset-0 z-0 overflow-hidden" id="hero-slideshow">
+                <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 ease-in-out scale-105" style="background-image: url('/images/gospel.jpg')" data-slide="0"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 ease-in-out scale-105" style="background-image: url('/images/salvation.jpg')" data-slide="1"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 ease-in-out scale-105" style="background-image: url('/images/the_word.jpg')" data-slide="2"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 ease-in-out scale-105" style="background-image: url('/images/hero.jpg')" data-slide="3"></div>
+                
+                <div class="absolute inset-0 bg-primary/45"></div>
                 <!-- Subtle Gradient overlay for text readability -->
-                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-transparent to-transparent"></div>
             </div>
             
             <div class="relative z-10 text-center px-gutter max-w-4xl mx-auto flex flex-col items-center gap-6 mt-16">
@@ -103,3 +107,31 @@ import SixPillars from '../components/SixPillars.astro';
         </section>
     </main>
 </Layout>
+
+<script>
+    // Hero Background Slideshow Script
+    document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('#hero-slideshow [data-slide]');
+        let currentSlide = 0;
+        const slideCount = slides.length;
+
+        if (slideCount > 0) {
+            // Show first slide
+            slides[0].classList.remove('opacity-0');
+            slides[0].classList.add('opacity-60');
+
+            setInterval(() => {
+                // Hide current slide
+                slides[currentSlide].classList.remove('opacity-60');
+                slides[currentSlide].classList.add('opacity-0');
+
+                // Next slide
+                currentSlide = (currentSlide + 1) % slideCount;
+
+                // Show next slide
+                slides[currentSlide].classList.remove('opacity-0');
+                slides[currentSlide].classList.add('opacity-60');
+            }, 6000); // Change image every 6 seconds
+        }
+    });
+</script>
