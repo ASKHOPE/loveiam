@@ -110,7 +110,7 @@ import SixPillars from '../components/SixPillars.astro';
 
 <script>
     // Hero Background Slideshow Script
-    document.addEventListener('DOMContentLoaded', () => {
+    function initSlideshow() {
         const slides = document.querySelectorAll('#hero-slideshow [data-slide]');
         let currentSlide = 0;
         const slideCount = slides.length;
@@ -131,7 +131,12 @@ import SixPillars from '../components/SixPillars.astro';
                 // Show next slide
                 slides[currentSlide].classList.remove('opacity-0');
                 slides[currentSlide].classList.add('opacity-60');
-            }, 6000); // Change image every 6 seconds
+            }, 5000); // Change image every 5 seconds
         }
-    });
+    }
+
+    // Run immediately since Astro scripts are deferred by default
+    initSlideshow();
+    // Also support Astro's view transitions page load event
+    document.addEventListener('astro:page-load', initSlideshow);
 </script>
