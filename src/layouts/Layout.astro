@@ -38,37 +38,41 @@ const isActive = (route: string) => {
     <!-- Desktop & Mobile Header -->
     <nav class="sticky top-0 z-40 bg-white dark:bg-zinc-950 border-b border-slate-200 dark:border-zinc-800 shadow-md w-full transition-all duration-300" id="top-nav">
         <div class="flex justify-between items-center px-gutter py-2.5 w-full max-w-container-max mx-auto">
-            <!-- Brand Logo -->
-            <a class="font-display text-base md:text-lg tracking-wider font-extrabold text-trust-navy dark:text-white flex items-center gap-3 group transition-transform duration-300 hover:scale-101" href="/">
+            <!-- Brand Logo with Tagline on the Left -->
+            <a class="flex items-center gap-3.5 group transition-transform duration-300 hover:scale-101 flex-shrink-0" href="/">
                 <img src="/logo.png" alt="Love In Action Logo" class="h-14 md:h-18 w-auto object-contain bg-white rounded-lg p-2 shadow-sm border border-slate-200 transition-transform duration-500 group-hover:rotate-3" />
-                <span class="leading-none">LOVE IN ACTION</span>
+                <div class="flex flex-col items-start justify-center">
+                    <span class="font-display text-base md:text-lg tracking-wider font-extrabold text-trust-navy dark:text-white leading-none">LOVE IN ACTION</span>
+                    <span class="font-body text-[10px] md:text-[11px] text-slate-gray dark:text-zinc-400 font-medium tracking-wide mt-1.5 hidden sm:block max-w-sm md:max-w-md">
+                        Proclaiming the Gospel of Jesus Christ through the Tangible Acts of compassion.
+                    </span>
+                </div>
             </a>
             
-            <!-- Navigation Links (Desktop) -->
-            <ul class="hidden md:flex space-x-8 items-center">
-                <li>
-                    <a class={isActive('/') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/">Home</a>
-                </li>
-                <li>
-                    <a class={isActive('/about') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/about">About Us</a>
-                </li>
-                <li>
-                    <a class={isActive('/statement-of-faith') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/statement-of-faith">Statement of Faith</a>
-                </li>
-                <li>
-                    <a class={isActive('/contact') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/contact">Contact</a>
-                </li>
-            </ul>
+            <!-- Navigation Links & Action Button Grouped on the Right -->
+            <div class="hidden md:flex items-center gap-8">
+                <ul class="flex space-x-8 items-center">
+                    <li>
+                        <a class={isActive('/') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class={isActive('/about') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a class={isActive('/statement-of-faith') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/statement-of-faith">Statement of Faith</a>
+                    </li>
+                    <li>
+                        <a class={isActive('/contact') ? "text-trust-navy dark:text-action-gold border-b-2 border-action-gold py-1.5 font-extrabold font-display text-[14px] transition-all duration-200" : "text-slate-800 dark:text-zinc-200 border-b-2 border-transparent py-1.5 font-semibold font-display text-[14px] hover:text-trust-navy dark:hover:text-action-gold hover:border-action-gold/50 transition-all duration-200"} href="/contact">Contact</a>
+                    </li>
+                </ul>
 
-            <!-- Trailing Action -->
-            <div class="hidden md:flex">
-                <a href="/contact" class="bg-action-gold text-white font-display font-bold text-[13px] px-6 py-2.5 rounded-md hover:bg-trust-navy hover:shadow-md transition-all duration-200 active:scale-95">
+                <a href="/contact" class="bg-action-gold text-white font-display font-bold text-[13px] px-6 py-2.5 rounded-md hover:bg-trust-navy hover:shadow-md transition-all duration-200 active:scale-95 flex-shrink-0">
                     Donate
                 </a>
             </div>
 
             <!-- Mobile Menu Toggle -->
-            <button id="menu-toggle" aria-label="Toggle Menu" class="md:hidden text-trust-navy dark:text-white p-2 focus:outline-none">
+            <button id="menu-toggle" aria-label="Toggle Menu" class="md:hidden text-trust-navy dark:text-white p-2 focus:outline-none flex-shrink-0">
                 <span class="material-symbols-outlined text-[28px] align-middle">menu</span>
             </button>
         </div>
