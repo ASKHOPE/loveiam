@@ -22,25 +22,22 @@ import Layout from '../layouts/Layout.astro';
                     <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col gap-6">
                         <h2 class="font-display text-headline-sm md:text-headline-md text-trust-navy border-b border-outline-variant/30 pb-4 font-bold">Get In Touch</h2>
                         
-                        <div class="flex items-start gap-4 group">
-                            <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-trust-navy group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300 flex-shrink-0">
-                                <span class="material-symbols-outlined">location_on</span>
-                            </div>
+                        <div class="flex flex-col gap-5 text-body-lg text-slate-gray leading-relaxed">
                             <div>
-                                <h3 class="font-display text-base text-trust-navy mb-1 font-bold">Address</h3>
-                                <p class="font-body text-body-md text-slate-gray leading-relaxed font-bold">LOVE IN ACTION MINISTRIES, INC.</p>
-                                <p class="font-body text-body-md text-slate-gray leading-relaxed">16192 Coastal Hwy.<br/>Lewes, DE 19958</p>
+                                <p class="font-display font-extrabold text-trust-navy text-lg mb-1">LOVE IN ACTION MINISTRIES, INC.</p>
+                                <p>16192 Coastal Hwy.</p>
+                                <p>Lewes, DE 19958</p>
                             </div>
-                        </div>
-
-
-                        <div class="flex items-start gap-4 group">
-                            <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-trust-navy group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300 flex-shrink-0">
-                                <span class="material-symbols-outlined">language</span>
-                            </div>
-                            <div>
-                                <h3 class="font-display text-base text-trust-navy mb-1 font-bold">Website</h3>
-                                <a class="font-body text-body-md text-slate-gray hover:text-action-gold transition-colors" href="https://www.loveiam.us" target="_blank" rel="noopener noreferrer">www.loveiam.us</a>
+                            
+                            <div class="border-t border-outline-variant/30 pt-5 flex flex-col gap-3">
+                                <a class="hover:text-action-gold text-trust-navy font-semibold transition-colors flex items-center gap-3.5 group/link" href="mailto:info@loveiam.us">
+                                    <span class="material-symbols-outlined text-[22px] text-trust-navy group-hover/link:text-action-gold transition-colors">mail</span>
+                                    info@loveiam.us
+                                </a>
+                                <a class="hover:text-action-gold text-trust-navy font-semibold transition-colors flex items-center gap-3.5 group/link" href="https://www.loveiam.us" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-[22px] text-trust-navy group-hover/link:text-action-gold transition-colors">language</span>
+                                    www.loveiam.us
+                                </a>
                             </div>
                         </div>
                     </div>
