@@ -57,6 +57,15 @@
   /* Typography */
   --font-display: Montserrat, system-ui, sans-serif;
   --font-body: Inter, system-ui, sans-serif;
+  
+  --font-size-display-lg: 3.5rem;
+  --font-size-display-lg-mobile: 2.25rem;
+  --font-size-headline-lg: 2.5rem;
+  --font-size-headline-md: 2rem;
+  --font-size-headline-sm: 1.5rem;
+  --font-size-body-lg: 1.125rem;
+  --font-size-body-md: 1rem;
+  --font-size-body-sm: 0.875rem;
 
   /* Layout and Spacing */
   --spacing-gutter: 24px;

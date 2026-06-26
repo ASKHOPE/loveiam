@@ -36,10 +36,10 @@ const isActive = (route: string) => {
 </head>
 <body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col">
     <!-- Desktop & Mobile Header -->
-    <nav class="sticky top-0 z-40 bg-surface dark:bg-inverse-surface shadow-sm w-full transition-all duration-300" id="top-nav">
-        <div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+    <nav class="sticky top-0 z-40 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border-b border-slate-100 dark:border-zinc-800 shadow-sm w-full transition-all duration-300" id="top-nav">
+        <div class="flex justify-between items-center px-gutter py-3.5 w-full max-w-container-max mx-auto">
             <!-- Brand Logo -->
-            <a class="font-display text-headline-sm font-bold text-trust-navy dark:text-primary-fixed flex items-center gap-2 group transition-transform duration-300 hover:scale-105" href="/">
+            <a class="font-display text-[18px] tracking-wide font-extrabold text-trust-navy dark:text-white flex items-center gap-2 group transition-transform duration-300 hover:scale-102" href="/">
                 <img src="/logo.png" alt="Love In Action Logo" class="h-10 w-auto object-contain transition-transform duration-500 group-hover:rotate-3" />
                 LOVE IN ACTION
             </a>
@@ -47,22 +47,22 @@ const isActive = (route: string) => {
             <!-- Navigation Links (Desktop) -->
             <ul class="hidden md:flex space-x-8 items-center">
                 <li>
-                    <a class={isActive('/') ? "text-primary border-b-2 border-action-gold pb-1 font-bold font-display text-[14px]" : "text-slate-gray font-medium font-display text-[14px] hover:text-action-gold transition-colors duration-200"} href="/">Home</a>
+                    <a class={isActive('/') ? "text-trust-navy border-b-2 border-action-gold py-1.5 font-bold font-display text-[14px] transition-all duration-200" : "text-slate-gray border-b-2 border-transparent py-1.5 font-medium font-display text-[14px] hover:text-trust-navy hover:border-action-gold/50 transition-all duration-200"} href="/">Home</a>
                 </li>
                 <li>
-                    <a class={isActive('/about') ? "text-primary border-b-2 border-action-gold pb-1 font-bold font-display text-[14px]" : "text-slate-gray font-medium font-display text-[14px] hover:text-action-gold transition-colors duration-200"} href="/about">About Us</a>
+                    <a class={isActive('/about') ? "text-trust-navy border-b-2 border-action-gold py-1.5 font-bold font-display text-[14px] transition-all duration-200" : "text-slate-gray border-b-2 border-transparent py-1.5 font-medium font-display text-[14px] hover:text-trust-navy hover:border-action-gold/50 transition-all duration-200"} href="/about">About Us</a>
                 </li>
                 <li>
-                    <a class={isActive('/statement-of-faith') ? "text-primary border-b-2 border-action-gold pb-1 font-bold font-display text-[14px]" : "text-slate-gray font-medium font-display text-[14px] hover:text-action-gold transition-colors duration-200"} href="/statement-of-faith">Statement of Faith</a>
+                    <a class={isActive('/statement-of-faith') ? "text-trust-navy border-b-2 border-action-gold py-1.5 font-bold font-display text-[14px] transition-all duration-200" : "text-slate-gray border-b-2 border-transparent py-1.5 font-medium font-display text-[14px] hover:text-trust-navy hover:border-action-gold/50 transition-all duration-200"} href="/statement-of-faith">Statement of Faith</a>
                 </li>
                 <li>
-                    <a class={isActive('/contact') ? "text-primary border-b-2 border-action-gold pb-1 font-bold font-display text-[14px]" : "text-slate-gray font-medium font-display text-[14px] hover:text-action-gold transition-colors duration-200"} href="/contact">Contact</a>
+                    <a class={isActive('/contact') ? "text-trust-navy border-b-2 border-action-gold py-1.5 font-bold font-display text-[14px] transition-all duration-200" : "text-slate-gray border-b-2 border-transparent py-1.5 font-medium font-display text-[14px] hover:text-trust-navy hover:border-action-gold/50 transition-all duration-200"} href="/contact">Contact</a>
                 </li>
             </ul>
 
             <!-- Trailing Action -->
             <div class="hidden md:flex">
-                <a href="/contact" class="bg-action-gold text-white font-display font-bold text-[13px] px-6 py-3 rounded-md hover:bg-trust-navy hover:shadow-md transition-all duration-200 active:scale-95">
+                <a href="/contact" class="bg-action-gold text-white font-display font-bold text-[13px] px-6 py-2.5 rounded-md hover:bg-trust-navy hover:shadow-md transition-all duration-200 active:scale-95">
                     Donate
                 </a>
             </div>
