@@ -1,0 +1,51 @@
+import "./compiler_Szqpsstk.mjs";
+import { C as createComponent, _ as addAttribute, d as renderTemplate, h as maybeRenderHead } from "./server_DmB02RCv.mjs";
+//#region src/components/SixPillars.astro
+var $$SixPillars = createComponent(($$result, $$props, $$slots) => {
+	return renderTemplate`${maybeRenderHead($$result)}<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-surface"><div class="max-w-container-max mx-auto"><!-- Header Block --><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12 items-end"><div class="lg:col-span-7"><span class="font-display text-action-gold tracking-widest text-[12px] font-bold uppercase block mb-3">Choose Your Mission</span><h2 class="font-display text-trust-navy text-headline-sm md:text-headline-md font-bold leading-tight">Six pillars of faith. A lifetime of service.</h2></div><div class="lg:col-span-5"><p class="font-body text-slate-gray text-body-md md:text-body-lg leading-relaxed">Our ministry focuses on tangible expressions of God's love. Explore the core tenets of our faith and how we put them into action across the globe.</p></div></div><!-- Pillars Card Grid --><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">${[
+		{
+			title: "The Gospel",
+			category: "PROCLAMATION",
+			stats: "12 REGIONS",
+			image: "/images/gospel.jpg",
+			link: "/statement-of-faith"
+		},
+		{
+			title: "Compassion",
+			category: "SERVICE",
+			stats: "8 PROJECTS",
+			image: "/images/compassion.jpg",
+			link: "/about"
+		},
+		{
+			title: "Discipleship",
+			category: "TRAINING",
+			stats: "15 SITES",
+			image: "/images/discipleship.jpg",
+			link: "/about"
+		},
+		{
+			title: "Salvation",
+			category: "GRACE",
+			stats: "GLOBAL REACH",
+			image: "/images/salvation.jpg",
+			link: "/statement-of-faith"
+		},
+		{
+			title: "The Word",
+			category: "SCRIPTURE",
+			stats: "4 MINISTRIES",
+			image: "/images/the_word.jpg",
+			link: "/statement-of-faith"
+		},
+		{
+			title: "Fellowship",
+			category: "COVENANT",
+			stats: "6 PLANTS",
+			image: "/images/fellowship.jpg",
+			link: "/about"
+		}
+	].map((pillar) => renderTemplate`<a${addAttribute(pillar.link, "href")} class="group relative h-[360px] sm:h-[400px] rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-end bg-primary focus:outline-none focus:ring-2 focus:ring-action-gold"><!-- Background Image --><div class="absolute inset-0 z-0"><img${addAttribute(pillar.image, "src")}${addAttribute(pillar.title, "alt")} class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110 opacity-80 group-hover:opacity-90" loading="lazy"><!-- Tonal gradient overlay --><div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent opacity-95 group-hover:opacity-90 transition-opacity duration-300"></div></div><!-- Content --><div class="relative z-10 p-5 flex flex-col justify-end"><h3 class="font-display text-white text-[20px] font-bold mb-1 group-hover:text-action-gold transition-colors duration-300">${pillar.title}</h3><p class="font-body text-white/70 text-[10px] tracking-widest font-semibold uppercase">${pillar.category} <span class="text-action-gold mx-1 font-bold">·</span> ${pillar.stats}</p></div></a>`)}</div></div></section>`;
+}, "C:/Users/arnol/OneDrive/Documents/Github/loveiam/src/components/SixPillars.astro", void 0);
+//#endregion
+export { $$SixPillars as t };
