@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SixPillars from '../components/SixPillars.astro';
+---
+
+<Layout title="Love In Action Ministries">
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden bg-primary">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-cover bg-center opacity-60 mix-blend-multiply transition-transform duration-10000 ease-out scale-105" style="background-image: url('/images/hero.jpg')"></div>
+                <div class="absolute inset-0 bg-primary/40"></div>
+                <!-- Subtle Gradient overlay for text readability -->
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+            </div>
+            
+            <div class="relative z-10 text-center px-gutter max-w-4xl mx-auto flex flex-col items-center gap-6 mt-16">
+                <!-- Scripture Quote -->
+                <h1 class="font-display text-display-lg-mobile md:text-display-lg text-white drop-shadow-lg leading-tight animate-fade-in">
+                    "Let us not love in word or speech, but in action and in truth."
+                </h1>
+                <p class="font-body text-body-lg text-inverse-primary font-medium tracking-wide opacity-90">
+                    — 1 John 3:18
+                </p>
+                <!-- Call to Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
+                    <a href="/contact" class="bg-action-gold text-white font-display font-bold text-center py-4 px-8 rounded-md shadow-lg hover:bg-white hover:text-trust-navy transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto">
+                        Donate Now
+                    </a>
+                    <a href="/statement-of-faith" class="bg-transparent border-2 border-white text-white font-display font-bold text-center py-4 px-8 rounded-md hover:bg-white/10 transition-all duration-300 w-full sm:w-auto">
+                        Our Ministries
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-surface">
+            <div class="max-w-container-max mx-auto text-center flex flex-col items-center">
+                <span class="material-symbols-outlined text-[48px] text-action-gold mb-6" style="font-variation-settings: 'FILL' 0;">public</span>
+                <h2 class="font-display text-headline-md text-trust-navy mb-6 max-w-3xl font-bold leading-tight">
+                    Proclaiming the Gospel of Jesus Christ through <span class="text-action-gold border-b-2 border-action-gold/30">Tangible Acts</span> of compassion.
+                </h2>
+                <p class="font-body text-body-lg text-slate-gray max-w-2xl leading-relaxed">
+                    We believe that true faith is demonstrated through action. By addressing immediate physical needs alongside spiritual guidance, we strive to reflect the profound love and steadfast commitment central to our mission.
+                </p>
+                <div class="mt-10 h-1.5 w-24 bg-action-gold rounded-full opacity-65"></div>
+            </div>
+        </section>
+
+        <!-- Interactive Six Pillars of Faith Section -->
+        <SixPillars />
+
+        <!-- Impact Bento Grid -->
+        <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-warm-glow border-t border-outline-variant/10">
+            <div class="max-w-container-max mx-auto">
+                <div class="mb-12 md:mb-16 text-center">
+                    <span class="font-display text-action-gold tracking-widest text-[12px] font-bold uppercase block mb-3">Our Footprint</span>
+                    <h3 class="font-display text-headline-sm md:text-headline-md text-trust-navy font-bold leading-tight mb-2">Our Impact Area</h3>
+                    <p class="font-body text-body-md text-slate-gray">Seeing compassion take form across communities.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+                    <!-- Large Feature Card -->
+                    <div class="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group shadow-md bg-white border border-outline-variant/30 flex flex-col justify-end">
+                        <div class="absolute inset-0 w-full h-full z-0">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('/images/compassion.jpg')"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        </div>
+                        <div class="relative z-10 p-8">
+                            <span class="inline-block bg-action-gold text-white font-display text-[10px] tracking-wider font-bold uppercase px-3 py-1.5 rounded mb-4">Relief Operations</span>
+                            <h4 class="font-display text-headline-sm md:text-headline-md text-white mb-2 font-bold">Immediate Crisis Response</h4>
+                            <p class="font-body text-body-md text-white/80 max-w-lg mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 hidden md:block leading-relaxed">Providing essential supplies, shelter, and care to communities facing sudden hardship or natural disasters.</p>
+                            <a class="inline-flex items-center text-action-gold font-display font-bold text-[13px] hover:text-white transition-colors" href="/about">
+                                Explore Efforts <span class="material-symbols-outlined ml-2 text-[18px] align-middle">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Small Stat Card 1 -->
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-outline-variant/20 flex flex-col justify-center items-center text-center relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full -mr-4 -mt-4 opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
+                        <span class="material-symbols-outlined text-[40px] text-primary mb-4" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                        <h5 class="font-display text-trust-navy font-bold mb-1 text-5xl">10k+</h5>
+                        <p class="font-display text-[10px] tracking-wider font-bold text-slate-gray uppercase">Lives Touched Monthly</p>
+                    </div>
+                    
+                    <!-- Small Info Card 2 -->
+                    <div class="bg-trust-navy text-white rounded-xl p-8 shadow-md flex flex-col justify-between relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-surface-tint/40 via-transparent to-transparent"></div>
+                        <div class="relative z-10">
+                            <span class="material-symbols-outlined text-[36px] text-action-gold mb-4">school</span>
+                            <h4 class="font-display text-headline-sm font-bold mb-2">Education Initiatives</h4>
+                            <p class="font-body text-body-md text-white/80 leading-relaxed text-sm">Empowering the next generation through literacy programs and spiritual mentorship.</p>
+                        </div>
+                        <a class="relative z-10 inline-flex items-center text-white/90 font-display font-bold text-[13px] hover:text-action-gold transition-colors mt-4" href="/about">
+                            Learn More <span class="material-symbols-outlined ml-2 text-[16px] align-middle font-bold">chevron_right</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

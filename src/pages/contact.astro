@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us | Love In Action Ministries">
+    <main class="flex-grow animate-fade-in">
+        <!-- Hero Section -->
+        <section class="relative w-full h-[360px] flex items-center justify-center bg-trust-navy text-white overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('/images/contact_hero.jpg')"></div>
+            <div class="relative z-10 text-center px-gutter">
+                <span class="font-display text-action-gold tracking-widest text-[12px] font-bold uppercase block mb-3">Get In Touch</span>
+                <h1 class="font-display text-display-lg-mobile md:text-display-lg mb-4 text-white drop-shadow-md font-bold leading-tight">Contact Us</h1>
+                <p class="font-body text-body-lg max-w-2xl mx-auto text-warm-glow opacity-90 leading-relaxed">We'd love to hear from you. Reach out to learn more about our ministries, volunteer opportunities, or how you can partner with us.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="py-section-padding-desktop px-gutter max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info Cards (Bento style) -->
+                <div class="flex flex-col gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col gap-6">
+                        <h2 class="font-display text-headline-sm md:text-headline-md text-trust-navy border-b border-outline-variant/30 pb-4 font-bold">Get In Touch</h2>
+                        
+                        <div class="flex items-start gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-trust-navy group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300 flex-shrink-0">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-base text-trust-navy mb-1 font-bold">Address</h3>
+                                <p class="font-body text-body-md text-slate-gray leading-relaxed font-bold">LOVE IN ACTION MINISTRIES, INC.</p>
+                                <p class="font-body text-body-md text-slate-gray leading-relaxed">16192 Coastal Hwy.<br/>Lewes, DE 19958</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-trust-navy group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300 flex-shrink-0">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-base text-trust-navy mb-1 font-bold">Email</h3>
+                                <a class="font-body text-body-md text-slate-gray hover:text-action-gold transition-colors" href="mailto:info@loveiam.us">info@loveiam.us</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-trust-navy group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300 flex-shrink-0">
+                                <span class="material-symbols-outlined">language</span>
+                            </div>
+                            <div>
+                                <h3 class="font-display text-base text-trust-navy mb-1 font-bold">Website</h3>
+                                <a class="font-body text-body-md text-slate-gray hover:text-action-gold transition-colors" href="https://www.loveiam.us" target="_blank" rel="noopener noreferrer">www.loveiam.us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Follow -->
+                    <div class="bg-trust-navy text-white p-8 rounded-xl shadow-lg flex flex-col gap-6 relative overflow-hidden group">
+                        <div class="absolute -right-10 -top-10 w-40 h-40 bg-action-gold rounded-full opacity-10 blur-2xl pointer-events-none transition-transform duration-500 group-hover:scale-110"></div>
+                        <h2 class="font-display text-headline-sm md:text-headline-md text-white border-b border-white/10 pb-4 relative z-10 font-bold">Follow Us</h2>
+                        <div class="flex flex-col gap-4 relative z-10">
+                            <!-- Social item grid/list -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <a aria-label="Facebook" class="flex items-center gap-3 border border-white/20 rounded-md p-3.5 hover:bg-white hover:text-trust-navy transition-all duration-300" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-[20px]">face_nod</span>
+                                    <span class="font-display text-xs font-bold uppercase">Facebook</span>
+                                </a>
+                                <a aria-label="Instagram" class="flex items-center gap-3 border border-white/20 rounded-md p-3.5 hover:bg-white hover:text-trust-navy transition-all duration-300" href="https://www.instagram.com/love_in_action_ministries_inc" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+                                    <span class="font-display text-xs font-bold uppercase">Instagram</span>
+                                </a>
+                                <a aria-label="YouTube" class="flex items-center gap-3 border border-white/20 rounded-md p-3.5 hover:bg-white hover:text-trust-navy transition-all duration-300" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-[20px]">smart_display</span>
+                                    <span class="font-display text-xs font-bold uppercase">YouTube</span>
+                                </a>
+                                <a aria-label="LinkedIn" class="flex items-center gap-3 border border-white/20 rounded-md p-3.5 hover:bg-white hover:text-trust-navy transition-all duration-300" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-[20px]">work</span>
+                                    <span class="font-display text-xs font-bold uppercase">LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 h-full">
+                    <h2 class="font-display text-headline-sm md:text-headline-md text-trust-navy mb-6 font-bold">Send a Message</h2>
+                    <form class="flex flex-col gap-6" onsubmit="event.preventDefault(); alert('Thank you! Your message has been submitted.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-display text-[11px] font-bold text-slate-gray tracking-wider uppercase" for="firstName">First Name</label>
+                                <input class="border border-outline-variant rounded-md px-4 py-3 font-body text-body-md focus:outline-none focus:border-trust-navy focus:ring-1 focus:ring-trust-navy transition-colors bg-surface-bright" id="firstName" placeholder="Jane" type="text" required/>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-display text-[11px] font-bold text-slate-gray tracking-wider uppercase" for="lastName">Last Name</label>
+                                <input class="border border-outline-variant rounded-md px-4 py-3 font-body text-body-md focus:outline-none focus:border-trust-navy focus:ring-1 focus:ring-trust-navy transition-colors bg-surface-bright" id="lastName" placeholder="Doe" type="text" required/>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-display text-[11px] font-bold text-slate-gray tracking-wider uppercase" for="email">Email Address</label>
+                            <input class="border border-outline-variant rounded-md px-4 py-3 font-body text-body-md focus:outline-none focus:border-trust-navy focus:ring-1 focus:ring-trust-navy transition-colors bg-surface-bright" id="email" placeholder="jane@example.com" type="email" required/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-display text-[11px] font-bold text-slate-gray tracking-wider uppercase" for="subject">Subject</label>
+                            <input class="border border-outline-variant rounded-md px-4 py-3 font-body text-body-md focus:outline-none focus:border-trust-navy focus:ring-1 focus:ring-trust-navy transition-colors bg-surface-bright" id="subject" placeholder="How can we help?" type="text" required/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-display text-[11px] font-bold text-slate-gray tracking-wider uppercase" for="message">Message</label>
+                            <textarea class="border border-outline-variant rounded-md px-4 py-3 font-body text-body-md focus:outline-none focus:border-trust-navy focus:ring-1 focus:ring-trust-navy transition-colors bg-surface-bright resize-none" id="message" placeholder="Write your message here..." rows="5" required></textarea>
+                        </div>
+                        <button class="bg-trust-navy text-white font-display font-bold text-[13px] px-8 py-4 rounded-md hover:bg-action-gold hover:text-white transition-all shadow-md mt-4 hover:-translate-y-0.5 self-start" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Placeholder Section (Stylized map background) -->
+        <section class="w-full h-96 relative bg-surface-container-low">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgGXOD0KrgH3jCaY7L8TGvsXltvnuJnxpIXQ083u4wTJflkMmL6tU40QbgX6pyDvV-pxPJYt4grMEqIqtoi7fGD5IDddMLf1cOHYyK8fWqBjxcU32_qotm5N8XoQ_d1ZM6RRwlq5loCX8e1iBUaJnoN46YoXUJxp5yLdYovbn9-YdycwxVIU0dE9_wGdd4CphiSaju9McwdCw_aHkhu9X-1zN3aa6WU4vw7uUL75F7B3M-s_4rCciM7opddLAYhxqF1zlNpe25-RQ')"></div>
+            <!-- Overlay card for the map -->
+            <div class="absolute top-8 left-8 bg-white p-6 rounded-lg shadow-lg border border-outline-variant/30 max-w-sm hidden sm:block">
+                <h4 class="font-display font-bold text-trust-navy mb-1">Our Registered Office</h4>
+                <p class="font-body text-sm text-slate-gray leading-relaxed mb-3">16192 Coastal Hwy, Lewes, DE 19958</p>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="font-display font-bold text-xs text-action-gold hover:text-trust-navy transition-colors">GET DIRECTIONS</a>
+            </div>
+        </section>
+    </main>
+</Layout>

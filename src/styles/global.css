@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-trust-navy: #1a365d;
+  --color-action-gold: #d69e2e;
+  --color-warm-glow: #fffaf0;
+  --color-slate-gray: #4a5568;
+  --color-surface: #f7fafc;
+  --color-surface-dim: #d7dadc;
+  --color-surface-bright: #f7fafc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f6;
+  --color-surface-container: #ebeef0;
+  --color-surface-container-high: #e5e9eb;
+  --color-surface-container-highest: #e0e3e5;
+  --color-on-surface: #181c1e;
+  --color-on-surface-variant: #43474e;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eef1f3;
+  --color-outline: #74777f;
+  --color-outline-variant: #c4c6cf;
+  --color-surface-tint: #455f88;
+  --color-primary: #002045;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1a365d;
+  --color-on-primary-container: #86a0cd;
+  --color-inverse-primary: #adc7f7;
+  --color-secondary: #7d5700;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ffc250;
+  --color-on-secondary-container: #725000;
+  --color-tertiary: #321b00;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #4f2e00;
+  --color-on-tertiary-container: #d4903b;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #d6e3ff;
+  --color-primary-fixed-dim: #adc7f7;
+  --color-on-primary-fixed: #001b3c;
+  --color-on-primary-fixed-variant: #2d476f;
+  --color-secondary-fixed: #ffdeaa;
+  --color-secondary-fixed-dim: #f8bc4b;
+  --color-on-secondary-fixed: #271900;
+  --color-on-secondary-fixed-variant: #5f4100;
+  --color-tertiary-fixed: #ffddba;
+  --color-tertiary-fixed-dim: #ffb866;
+  --color-on-tertiary-fixed: #2b1700;
+  --color-on-tertiary-fixed-variant: #673d00;
+  --color-background: #f7fafc;
+  --color-on-background: #181c1e;
+  --color-surface-variant: #e0e3e5;
+
+  /* Typography */
+  --font-display: Montserrat, system-ui, sans-serif;
+  --font-body: Inter, system-ui, sans-serif;
+
+  /* Layout and Spacing */
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+  --spacing-section-padding-desktop: 80px;
+  --spacing-section-padding-mobile: 48px;
+
+  /* Shapes */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
