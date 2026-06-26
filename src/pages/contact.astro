@@ -107,11 +107,12 @@ import Layout from '../layouts/Layout.astro';
         <!-- Map Placeholder Section (Stylized map background) -->
         <section class="w-full h-96 relative bg-surface-container-low">
             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgGXOD0KrgH3jCaY7L8TGvsXltvnuJnxpIXQ083u4wTJflkMmL6tU40QbgX6pyDvV-pxPJYt4grMEqIqtoi7fGD5IDddMLf1cOHYyK8fWqBjxcU32_qotm5N8XoQ_d1ZM6RRwlq5loCX8e1iBUaJnoN46YoXUJxp5yLdYovbn9-YdycwxVIU0dE9_wGdd4CphiSaju9McwdCw_aHkhu9X-1zN3aa6WU4vw7uUL75F7B3M-s_4rCciM7opddLAYhxqF1zlNpe25-RQ')"></div>
-            <!-- Overlay card for the map -->
-            <div class="absolute top-8 left-8 bg-white p-6 rounded-lg shadow-lg border border-outline-variant/30 max-w-sm hidden sm:block">
+            <!-- Centered Overlay card for the map -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-xl shadow-2xl border border-outline-variant/30 max-w-sm w-11/12 sm:w-auto flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-[42px] text-red-600 mb-3 animate-bounce" style="font-variation-settings: 'FILL' 1;">location_on</span>
                 <h4 class="font-display font-bold text-trust-navy mb-1">Our Registered Office</h4>
-                <p class="font-body text-sm text-slate-gray leading-relaxed mb-3">16192 Coastal Hwy, Lewes, DE 19958</p>
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="font-display font-bold text-xs text-action-gold hover:text-trust-navy transition-colors">GET DIRECTIONS</a>
+                <p class="font-body text-sm text-slate-gray leading-relaxed mb-4">16192 Coastal Hwy, Lewes, DE 19958</p>
+                <a href="https://maps.google.com/?q=16192+Coastal+Hwy,+Lewes,+DE+19958" target="_blank" rel="noopener noreferrer" class="font-display font-bold text-xs text-action-gold hover:text-trust-navy transition-colors tracking-wider uppercase">GET DIRECTIONS</a>
             </div>
         </section>
     </main>
