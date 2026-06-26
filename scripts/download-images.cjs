@@ -68,8 +68,8 @@ const IMAGES_TO_DOWNLOAD = [
     },
     {
         filename: 'about_hero.jpg',
-        query: 'volunteers happy community',
-        fallback: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80' // happy volunteers
+        query: 'christian prayer hands light',
+        fallback: 'https://images.unsplash.com/photo-1544764200-d834fd210a22?auto=format&fit=crop&w=1920&q=80' // prayer hands sunset
     },
     {
         filename: 'contact_hero.jpg',
